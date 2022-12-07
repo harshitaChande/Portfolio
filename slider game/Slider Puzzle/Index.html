@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Slider - The Puzzle Game</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montez&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../../index.html">Harsita Chande</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../work.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../blogs.html">Blogs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../contact.html">Contact Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../rock_paper_scissor/index.html">Rock Paper Scissor Game</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../slider/slider.html">Slider</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Index.html">Slider Puzzle</a>
+					</li>
+			</div>
+		</div>
+	</nav>
+	<div id="wrapper">
+		<div id="img-container">
+			<div id="img-container-title">Choose Image For Puzzle</div>
+			<span class="imageselect"><img src="resources/pictures/pug/frame.jpg" height="150px" width="150px"
+					class="imgsel" name="pug"></span>
+			<span class="imageselect"><img src="resources/pictures/dog/frame.jpg" height="150p" width="150px"
+					class="imgsel" name="dog"></span>
+			<span class="imageselect"><img src="resources/pictures/earth/frame.jpg" height="150px" width="150px"
+					class="imgsel" name="earth"></span>
+			<span class="imageselect"><img src="resources/pictures/begema/frame.jpg" height="150px" width="150px"
+					class="imgsel" name="begema"></span>
+		</div>
+	</div>
+	<div id="heading_Container">
+		<div id="changeimage"></div>
+		<div id="head">Slider Puzzle</div>
+	</div>
+	<div id="frame"></div>
+	<div id="game">
+		<li class="tile" id="1"><span class="number">1</span></li>
+		<li class="tile" id="2"><span class="number">2</span></li>
+		<li class="tile" id="3"><span class="number">3</span></li>
+		<li class="tile" id="4"><span class="number">4</span></li>
+		<li class="tile" id="5"><span class="number">5</span></li>
+		<li class="tile" id="6"><span class="number">6</span></li>
+		<li class="tile" id="7"><span class="number">7</span></li>
+		<li class="tile" id="8"><span class="number">8</span></li>
+		<li class="tile" id="blank"><span></span></li>
+	</div>
+	<div id="help"><input type="checkbox" name="enablehelp" onchange="shownumbers();">Enable Help</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
